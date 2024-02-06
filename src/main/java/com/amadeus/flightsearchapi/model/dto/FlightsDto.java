@@ -1,0 +1,20 @@
+package com.amadeus.flightsearchapi.model.dto;
+
+import lombok.*;
+
+import java.time.LocalDateTime;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@ToString
+public class FlightsDto {
+    private Long id;
+    private String departureAirport;
+    private String arrivalAirport;
+    private LocalDateTime departureDate;
+    private LocalDateTime returnDate;
+    private Double price;
+}
